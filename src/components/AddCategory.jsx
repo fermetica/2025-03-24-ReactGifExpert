@@ -34,10 +34,3 @@ export const AddCategory = ({onNewCategory}) => {
   )
 }
 
-/*
-function (evento) {
-  onInputChange(evento){
-  }
-}
-*/
-
