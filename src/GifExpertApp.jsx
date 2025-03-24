@@ -7,16 +7,16 @@ export const GifExpertApp = () => {
 
   const [categories, setCategories] = useState(['Dragon Ball']);
 
-  const onAddCategory = (newCategory) => {
 
+  const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) {
       console.log("ya existe");
       return;
     }
     console.log(newCategory);
-
     setCategories([newCategory, ...categories]);
   }
+  
 
   return (
     <>
@@ -30,7 +30,7 @@ export const GifExpertApp = () => {
         return (
           <GifGrid 
             key={categoria}
-            catego={categoria}
+            category={categoria}
           />
         )
       })} 
