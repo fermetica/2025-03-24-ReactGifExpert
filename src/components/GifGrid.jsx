@@ -24,6 +24,22 @@ useEffect(() => {
     <>
       <h3>{ category }</h3>
 
+      {/*=>PRIMER METODO*/}
+      {
+        isLoading && (<h2>Cargando...</h2>) 
+      }
+
+
+{/* 
+       =>SEGUNDO METODO
+      {
+        isLoading
+        ? (<h2>Cargando...</h2>) 
+        : null
+      }
+ */}
+ 
+      
       <div className="card-grid">
         { images.map( ( image ) => 
           (<GifItem key={image.id}
@@ -31,8 +47,6 @@ useEffect(() => {
           />
         ))}
       </div>
-
-
     </>
   )
 }
